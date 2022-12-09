@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * main - print a random num to variable
+ * main - print the last digit num
  *
  * Return: 0
  */
@@ -22,7 +22,7 @@ int main(void)
 	if (x == 0)
 	{	printf(" and is 0");
 	}
-	if (x < 6 && != 0)
+	if (x < 6 && x !=  0)
 	{	printf(" and is less than 6 and not 0");
 	}
 	printf("\n");
