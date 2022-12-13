@@ -23,8 +23,9 @@ void times_table(void)
 			else
 				_putchar((prod / 10) + '0');
 
-			_putchar((prod % 10) + '0');
+				_putchar((prod % 10) + '0');
 		}
 	}
+
 	_putchar('\n');
 }
