@@ -11,11 +11,11 @@ void print_number(int n)
 	if (n < 0)
 	{
 		_putchar(45);
-		i = -1;
+		i = -i;
 	}
 	if (i / 10)
 	{
-		print_number(1 / 10);
+		print_number(i / 10);
 	}
-	_putchar(1 % 10 + '0');
+	_putchar(i % 10 + '0');
 }
