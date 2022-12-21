@@ -1,1 +1,1 @@
-More pointer, Arrays and string
+More pointer, Arrays and strings
