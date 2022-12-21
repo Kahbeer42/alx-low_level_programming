@@ -1,1 +1,1 @@
-More pointer, Arrays and strings
+More pointers, Strings ans Arrays.s
