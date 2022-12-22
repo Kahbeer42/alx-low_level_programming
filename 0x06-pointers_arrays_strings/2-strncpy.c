@@ -7,7 +7,7 @@
  * @src: source of the string
  * @n: length of the int.
  *
- * Return: pointer to the str dest.
+ * Return: pointer to the strings
  */
 
 char *_strncpy(char *dest, char *src, int n);
@@ -18,8 +18,9 @@ char *_strncpy(char *dest, char *src, int n);
 	{
 		*(dest + i) = *(src + i);
 	}
-	for (i < n; i++)
+	for (; i < n; i++)
 	{
 	*(dest + i) = '\0';
-	}									return (dest);
+	}
+	return (dest);
 }
