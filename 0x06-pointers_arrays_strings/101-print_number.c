@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_number - prints an integer using _putchar.
+ * print_number - prints an integer using putchar.
  * @n: number to prints
  *
  * Return: nothing
@@ -9,7 +9,7 @@
 
 void print_number(int n)
 {
-	unsigned int y,
+	unsigned int y;
 
 	if (n < 0)
 	{
