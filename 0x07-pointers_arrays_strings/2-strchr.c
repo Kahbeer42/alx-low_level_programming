@@ -2,11 +2,13 @@
 
 /**
  * *_strchr - function that locates a character in a string
- * @s: string
- * @c: char
+ * @s: string to check
+ * @c: char we are looking for
  *
- * Return: a pointer to the first occurrence of a char
+ * Return: a pointer to the first occurrence of a char @c in the str
+ * @s. Return if the character is not found.
  */
+
 char *_strchr(char *s, char c)
 {
 	while (*s)
