@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 
 /**
  * *_strpbrk - function locates the first occurrence in the
