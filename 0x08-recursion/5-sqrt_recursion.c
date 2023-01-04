@@ -13,7 +13,7 @@ int lookout(int x, int y)
 		return (x);
 	if (x * x > y)
 		return (-1);
-	return (lookout(x + 1, b));
+	return (lookout(x + 1, y));
 }
 
 /**
