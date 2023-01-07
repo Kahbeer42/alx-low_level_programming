@@ -1,8 +1,9 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - adds positive number
- * @argc: Thw numbers of arguments passed to the program
+ * @argc: The numbers of arguments passed to the program
  * @argv: An arrays of pointers to the argument
  * Return: 1 if one of the number contains symbol that are non digit
  */
