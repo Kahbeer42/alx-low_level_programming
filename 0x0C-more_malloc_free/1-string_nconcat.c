@@ -4,13 +4,13 @@
  * *string_nconcat - Concatenates two string
  * @s1: first string
  * @s2: second string
- * @n: an int
+* @n: an int
  * Return: pointer shall point to a newly allocated
  * space in memory.
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int i, j, k;
+	unsigned int i, j, k;
 	char *s;
 
 	if (s1 == NULL)
