@@ -1,4 +1,4 @@
-#include "variadic_functions"
+#include "variadic_functions.h"
 #include <stdio.h>
 /**
  * print_all - functions that prints anything
@@ -8,11 +8,10 @@
  */
 void print_all(const char * const format, ...)
 {
-	int i;
-	int flag;
+	int i, flag;
 	char *str;
 
-	va_list_a_list;
+	va_list a_list;
 	va_start(a_list, format);
 	i = 0;
 	while (format != NULL && format[i] != '\0')
