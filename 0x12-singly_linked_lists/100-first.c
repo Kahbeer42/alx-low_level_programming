@@ -7,7 +7,7 @@
 void myStartupFun(void) __attribute__ ((constructor));
 
 /**
- * myStarupFun - implementation of myStartupFun
+ * myStartupFun - implementation of myStartupFun
  */
 void myStartupFun(void)
 {
