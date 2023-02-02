@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 #include <stdlib.h>
 
 void util(char **, char *);
@@ -32,7 +33,7 @@ char **strtow(char *str)
 		len += flag == 1 ? 1 : 0;
 		if (len == 0)
 			return (NULL);
-		words = (char **)malloc(sizeof(char *) * (len + 1));
+		words = malloc(sizeof(char *) * (len + 1));
 		if (words == NULL)
 			return (NULL);
 		util(words, str);
@@ -70,11 +71,11 @@ void util(char **words, char *str)
 }
 
 /**
- *  * create_word - creates a word and insert it into the array
- *   * @words: the array of strings
- *    * @str: the string
- *     * @start: the starting index of the word
- *      * @end: the stopping index of the word
+ * create_word - creates a word and insert it into the array
+ * @words: the array of strings
+ * @str: the string
+ * @start: the starting index of the word
+ * @end: the stopping index of the word
  * @index: the index of the array to insert the word
  */
 void create_word(char **words, char *str, int start, int end, int index)
@@ -82,7 +83,7 @@ void create_word(char **words, char *str, int start, int end, int index)
 	int i, j;
 
 	i = end - start;
-	words[index] = (char *)malloc(sizeof(char) * (i + 1));
+	words[index] = malloc(sizeof(char) * (i + 1));
 
 	for (j = 0; start < end; start++, j++)
 		words[index][j] = str[start];
