@@ -1,2 +1,1 @@
-This files contains peoject c program while studying from ALX school
-
+This files contains c program project undertook while studying from ALX student Education.
