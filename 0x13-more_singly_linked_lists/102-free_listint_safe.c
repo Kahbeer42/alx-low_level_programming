@@ -1,6 +1,6 @@
 #include "lists.h"
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * _ra - reallocates memory for an array of pointers
@@ -16,9 +16,10 @@ listint_t **_ra(listint_t **list, size_t size, listint_t *new)
 	listint_t **newlist;
 	size_t i;
 
-	newlist = malloc(sizeof(listint_t *));
+	newlist = malloc(size * sizeof(listint_t *));
 	if (newlist == NULL)
 	{
+		free(list);
 		exit(98);
 	}
 	for (i = 0; i < size - 1; i++)
@@ -46,13 +47,12 @@ size_t free_listint_safe(listint_t **head)
 	{
 		for (i = 0; i < num; i++)
 		{
-			if (*head == NULL)
+			if (*head == list[i])
 			{
 				*head = NULL;
 				free(list);
 				return (num);
 			}
-
 		}
 		num++;
 		list = _ra(list, num, *head);
@@ -63,5 +63,3 @@ size_t free_listint_safe(listint_t **head)
 	free(list);
 	return (num);
 }
-
-
